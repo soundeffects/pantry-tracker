@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "pantry-tracker",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}
