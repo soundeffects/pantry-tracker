@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import ListView from '../components/ListView';
 import './Pantry.css';
 
 const Pantry: React.FC = () => {
@@ -17,7 +17,7 @@ const Pantry: React.FC = () => {
             <IonTitle size="large">Pantry</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Pantry page" />
+        <ListView />
       </IonContent>
     </IonPage>
   );
