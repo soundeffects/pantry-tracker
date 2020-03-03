@@ -1,13 +1,17 @@
 export default class FoodItem {
   private name:string;
   private expiryDate:Date;
-  private priority:number;
-  private owner:string;
-  private note:string;
+  private priority?:number;
+  private owner?:string;
+  private note?:string;
   
-  constructor(name:string, expiryDate:Date, priority:number = 0, 
-      owner:string = null, note:string = null) {
-    this.setFields(name, expiryDate, priority, owner, note);
+  constructor(name:string, expiryDate:Date, priority?:number, 
+      owner?:string, note?:string) {
+    this.name = name;
+    this.expiryDate = expiryDate;
+    this.priority = priority;
+    this.owner = owner;
+    this.note = note
   }
   
   setName(name:string) { this.name = name }
@@ -25,8 +29,8 @@ export default class FoodItem {
   setNote(note:string) { this.note = note }
   getNote() { return this.note }
   
-  setFields(name:string, expiryDate:Date, priority:number = 0, 
-      owner:string = null, note:string = null) {
+  setFields(name:string, expiryDate:Date, priority?:number, 
+      owner?:string, note?:string) {
     this.name = name;
     this.expiryDate = expiryDate;
     this.priority = priority;
